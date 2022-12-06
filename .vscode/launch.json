@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'truck-save-custom-shape-to-stl'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=truck-save-custom-shape-to-stl",
+                    "--package=truck-save-custom-shape-to-stl"
+                ],
+                "filter": {
+                    "name": "truck-save-custom-shape-to-stl",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'truck-save-custom-shape-to-stl'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=truck-save-custom-shape-to-stl",
+                    "--package=truck-save-custom-shape-to-stl"
+                ],
+                "filter": {
+                    "name": "truck-save-custom-shape-to-stl",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
